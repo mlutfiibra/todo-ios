@@ -14,6 +14,7 @@
 		EF29CBCA235EE43D0076C454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF29CBC9235EE43D0076C454 /* Assets.xcassets */; };
 		EF29CBCD235EE43D0076C454 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF29CBCB235EE43D0076C454 /* LaunchScreen.storyboard */; };
 		EF29CBD92360AA220076C454 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF29CBD82360AA220076C454 /* Item.swift */; };
+		EFC19FA62362759A009C5BED /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EFC19FA42362759A009C5BED /* DataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		EF29CBCE235EE43D0076C454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF29CBD5235EF6300076C454 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		EF29CBD82360AA220076C454 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		EFC19FA52362759A009C5BED /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +67,7 @@
 				EF29CBD62360A9F00076C454 /* Views */,
 				EFC8846823614A7100BAA86E /* Supporting Files */,
 				EF29CBCE235EE43D0076C454 /* Info.plist */,
-				EF29CBDB2360AA310076C454 /* Model */,
+				EF29CBDB2360AA310076C454 /* Data Model */,
 			);
 			path = "TodoList-iOS";
 			sourceTree = "<group>";
@@ -86,12 +88,13 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		EF29CBDB2360AA310076C454 /* Model */ = {
+		EF29CBDB2360AA310076C454 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
+				EFC19FA42362759A009C5BED /* DataModel.xcdatamodeld */,
 				EF29CBD82360AA220076C454 /* Item.swift */,
 			);
-			path = Model;
+			path = "Data Model";
 			sourceTree = "<group>";
 		};
 		EFC8846823614A7100BAA86E /* Supporting Files */ = {
@@ -175,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF29CBD92360AA220076C454 /* Item.swift in Sources */,
+				EFC19FA62362759A009C5BED /* DataModel.xcdatamodeld in Sources */,
 				EF29CBC5235EE4390076C454 /* TodoListViewController.swift in Sources */,
 				EF29CBC1235EE4390076C454 /* AppDelegate.swift in Sources */,
 				EF29CBC3235EE4390076C454 /* SceneDelegate.swift in Sources */,
@@ -376,6 +380,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EFC19FA42362759A009C5BED /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EFC19FA52362759A009C5BED /* DataModel.xcdatamodel */,
+			);
+			currentVersion = EFC19FA52362759A009C5BED /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EF29CBB5235EE4390076C454 /* Project object */;
 }
