@@ -13,7 +13,6 @@
 		EF29CBC8235EE4390076C454 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF29CBC6235EE4390076C454 /* Main.storyboard */; };
 		EF29CBCA235EE43D0076C454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF29CBC9235EE43D0076C454 /* Assets.xcassets */; };
 		EF29CBCD235EE43D0076C454 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF29CBCB235EE43D0076C454 /* LaunchScreen.storyboard */; };
-		EF29CBD92360AA220076C454 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF29CBD82360AA220076C454 /* Item.swift */; };
 		EFC19FA62362759A009C5BED /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EFC19FA42362759A009C5BED /* DataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +26,6 @@
 		EF29CBCC235EE43D0076C454 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF29CBCE235EE43D0076C454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF29CBD5235EF6300076C454 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		EF29CBD82360AA220076C454 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		EFC19FA52362759A009C5BED /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				EFC19FA42362759A009C5BED /* DataModel.xcdatamodeld */,
-				EF29CBD82360AA220076C454 /* Item.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -177,7 +174,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF29CBD92360AA220076C454 /* Item.swift in Sources */,
 				EFC19FA62362759A009C5BED /* DataModel.xcdatamodeld in Sources */,
 				EF29CBC5235EE4390076C454 /* TodoListViewController.swift in Sources */,
 				EF29CBC1235EE4390076C454 /* AppDelegate.swift in Sources */,
