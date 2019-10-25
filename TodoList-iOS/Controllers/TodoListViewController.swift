@@ -20,6 +20,8 @@ class TodoListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        searchBar.delegate = self
+        
         loadItems()
     }
 
@@ -107,7 +109,7 @@ class TodoListViewController: UITableViewController {
         self.tableView.reloadData()
     }
     
-    func loadItems() {
+    func loadItems(with request: NSFetchRequest<Item> = Item.fetchRequest()) {
 
         //DECODING
 //        if let data = try? Data(contentsOf: dataFilePath!) {
@@ -122,7 +124,7 @@ class TodoListViewController: UITableViewController {
 //        }
         
         //READ DATA MODEL
-        let request : NSFetchRequest<Item> = Item.fetchRequest()
+//        let request : NSFetchRequest<Item> = Item.fetchRequest()
         
         do {
             itemArray = try context.fetch(request)
@@ -134,3 +136,21 @@ class TodoListViewController: UITableViewController {
     
 }
 
+extension TodoListViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
+        let request : NSFetchRequest<Item> = Item.fetchRequest()
+        
+        request.predicate = NSPredicate(format: "title CONTAINS[cd] %@", searchBar.text!)
+        
+        request.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
+        
+        loadItems(with: request)
+        
+//        do {
+//            itemArray = try context.fetch(request)
+//        }catch{
+//            print("Error fetching data \(error)")
+//        }
+    }
+}
