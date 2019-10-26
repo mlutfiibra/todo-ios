@@ -139,11 +139,12 @@ class TodoListViewController: UITableViewController {
 }
 
 extension TodoListViewController: UISearchBarDelegate {
+    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         
         let request : NSFetchRequest<Item> = Item.fetchRequest()
 
-        if(searchBar.text != "") {
+        if searchBar.text != "" {
             request.predicate = NSPredicate(format: "title CONTAINS[cd] %@", searchBar.text!)
             
             request.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
@@ -156,5 +157,17 @@ extension TodoListViewController: UISearchBarDelegate {
 //        }catch{
 //            print("Error fetching data \(error)")
 //        }
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        if searchBar.text?.count == 0 {
+            loadItems()
+            
+            DispatchQueue.main.async {
+                searchBar.resignFirstResponder()
+            }
+        }
+        
     }
 }
