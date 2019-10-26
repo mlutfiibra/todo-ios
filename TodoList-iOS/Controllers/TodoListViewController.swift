@@ -132,6 +132,8 @@ class TodoListViewController: UITableViewController {
             print("Error fetching data \(error)")
         }
         
+        tableView.reloadData()
+        
     }
     
 }
