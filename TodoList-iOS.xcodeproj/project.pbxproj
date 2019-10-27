@@ -14,6 +14,7 @@
 		EF29CBCA235EE43D0076C454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF29CBC9235EE43D0076C454 /* Assets.xcassets */; };
 		EF29CBCD235EE43D0076C454 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF29CBCB235EE43D0076C454 /* LaunchScreen.storyboard */; };
 		EFC19FA62362759A009C5BED /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EFC19FA42362759A009C5BED /* DataModel.xcdatamodeld */; };
+		EFC19FCF23655E60009C5BED /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC19FCE23655E60009C5BED /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		EF29CBCE235EE43D0076C454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF29CBD5235EF6300076C454 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		EFC19FA52362759A009C5BED /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		EFC19FCE23655E60009C5BED /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		EF29CBD72360A9FC0076C454 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				EFC19FCE23655E60009C5BED /* CategoryViewController.swift */,
 				EF29CBC4235EE4390076C454 /* TodoListViewController.swift */,
 			);
 			path = Controllers;
@@ -174,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFC19FCF23655E60009C5BED /* CategoryViewController.swift in Sources */,
 				EFC19FA62362759A009C5BED /* DataModel.xcdatamodeld in Sources */,
 				EF29CBC5235EE4390076C454 /* TodoListViewController.swift in Sources */,
 				EF29CBC1235EE4390076C454 /* AppDelegate.swift in Sources */,
