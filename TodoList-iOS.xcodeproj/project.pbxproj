@@ -64,10 +64,10 @@
 				EF29CBC0235EE4390076C454 /* AppDelegate.swift */,
 				EF29CBC2235EE4390076C454 /* SceneDelegate.swift */,
 				EF29CBD72360A9FC0076C454 /* Controllers */,
+				EF29CBDB2360AA310076C454 /* Data Model */,
 				EF29CBD62360A9F00076C454 /* Views */,
 				EFC8846823614A7100BAA86E /* Supporting Files */,
 				EF29CBCE235EE43D0076C454 /* Info.plist */,
-				EF29CBDB2360AA310076C454 /* Data Model */,
 			);
 			path = "TodoList-iOS";
 			sourceTree = "<group>";
