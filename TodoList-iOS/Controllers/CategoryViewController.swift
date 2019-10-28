@@ -25,16 +25,17 @@ class CategoryViewController: UITableViewController {
         return categories.count
     }
     
-//    MARK - Tableviwe Delegate Methods
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = UITableViewCell(style: .default, reuseIdentifier: "CategoryCell")
 
-        let category = categories[indexPath.row]
-
-        cell.textLabel?.text = categories[indexPath.row].name
-
         return cell
+    }
+    
+    //MARK - Tableview Delegate Methods
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        print(indexPath.row)
 
     }
     
@@ -62,7 +63,7 @@ class CategoryViewController: UITableViewController {
 
                 newCategory.name = textField.text!
 
-                self.categoryArray.append(newCategory)
+                self.categories.append(newCategory)
 
                 self.saveCategories()
             }
@@ -83,7 +84,7 @@ class CategoryViewController: UITableViewController {
     func loadCategories(with request: NSFetchRequest<Category> = Category.fetchRequest()) {
         do {
             categories = try context.fetch(request)
-        }catch{
+        } catch {
             print("Error fetching data \(error)")
         }
         
