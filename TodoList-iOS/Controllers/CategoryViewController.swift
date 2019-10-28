@@ -83,6 +83,7 @@ class CategoryViewController: UITableViewController {
     }
     
     func loadCategories(with request: NSFetchRequest<Category> = Category.fetchRequest()) {
+        
         do {
             categories = try context.fetch(request)
         } catch {
@@ -90,5 +91,6 @@ class CategoryViewController: UITableViewController {
         }
         
         tableView.reloadData()
+        
     }
 }
