@@ -30,6 +30,7 @@ class CategoryViewController: UITableViewController {
         let cell = UITableViewCell(style: .default, reuseIdentifier: "CategoryCell")
 
         return cell
+        
     }
     
     //MARK - Tableview Delegate Methods
