@@ -28,6 +28,8 @@ class CategoryViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = UITableViewCell(style: .default, reuseIdentifier: "CategoryCell")
+        
+        cell.textLabel?.text = categories[indexPath.row].name
 
         return cell
         
@@ -36,9 +38,31 @@ class CategoryViewController: UITableViewController {
     //MARK - Tableview Delegate Methods
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        print(indexPath.row)
+        performSegue(withIdentifier: "goToItems", sender: self)
 
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "goToItems") {
+            
+            let destinationVC = segue.destination as! TodoListViewController
+            
+            if let indexPath = tableView.indexPathForSelectedRow {
+                destinationVC.selectedCategory = categories[indexPath.row]
+            }
+            
+        }
+    }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//
+//        let destinationVC = segue.destination as! TodoListViewController
+//
+//        if let indexPath = tableView.indexPathForSelectedRow {
+//            destinationVC.selectedCategory = categories[indexPath.row]
+//        }
+//
+//    }
     
     func saveCategories() {
         do {
@@ -83,6 +107,8 @@ class CategoryViewController: UITableViewController {
     }
     
     func loadCategories(with request: NSFetchRequest<Category> = Category.fetchRequest()) {
+        
+        let request : NSFetchRequest<Category> = Category.fetchRequest()
         
         do {
             categories = try context.fetch(request)
