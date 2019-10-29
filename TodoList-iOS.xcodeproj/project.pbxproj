@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		EF29CBCD235EE43D0076C454 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF29CBCB235EE43D0076C454 /* LaunchScreen.storyboard */; };
 		EFC19FA62362759A009C5BED /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EFC19FA42362759A009C5BED /* DataModel.xcdatamodeld */; };
 		EFC19FCF23655E60009C5BED /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC19FCE23655E60009C5BED /* CategoryViewController.swift */; };
+		EFE418762367B93C00C26669 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE418752367B93C00C26669 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		EF29CBD5235EF6300076C454 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		EFC19FA52362759A009C5BED /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		EFC19FCE23655E60009C5BED /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		EFE418752367B93C00C26669 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +63,6 @@
 				071B38BE8F8C85E71A4A3C74 /* Pods-TodoList-iOS.debug.xcconfig */,
 				BB6107D6E424301AB4BBBA98 /* Pods-TodoList-iOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -118,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				EFC19FA42362759A009C5BED /* DataModel.xcdatamodeld */,
+				EFE418752367B93C00C26669 /* Data.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -247,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFC19FCF23655E60009C5BED /* CategoryViewController.swift in Sources */,
+				EFE418762367B93C00C26669 /* Data.swift in Sources */,
 				EFC19FA62362759A009C5BED /* DataModel.xcdatamodeld in Sources */,
 				EF29CBC5235EE4390076C454 /* TodoListViewController.swift in Sources */,
 				EF29CBC1235EE4390076C454 /* AppDelegate.swift in Sources */,
