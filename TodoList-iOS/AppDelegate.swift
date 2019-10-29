@@ -20,8 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let data = Data()
         data.name = "lutfi"
         data.age = 25
-        
-//        print(Realm.Configuration.defaultConfiguration.fileURL)
+       // /Users/lutfi/Library/Developer/CoreSimulator/Devices/79BD207E-5D65-47E7-B93F-B65B58A2E152/data/Containers/Data/Application/F94842F8-550C-4778-BC91-CB7BF0831238/Documents/default.realm
         
         do {
             let realm = try Realm()
