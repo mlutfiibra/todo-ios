@@ -17,10 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //Delete default realm
+        
+//        let defaultPath = Realm.Configuration.defaultConfiguration.fileURL?.path
+//        try! FileManager.default.removeItem(atPath: defaultPath!)
+        
         let data = Data()
         data.name = "lutfi"
         data.age = 25
-       // /Users/lutfi/Library/Developer/CoreSimulator/Devices/79BD207E-5D65-47E7-B93F-B65B58A2E152/data/Containers/Data/Application/F94842F8-550C-4778-BC91-CB7BF0831238/Documents/default.realm
+        
+//        print(Realm.Configuration.defaultConfiguration.fileURL)
+        
+       // /Users/lutfi/Library/Developer/CoreSimulator/Devices/79BD207E-5D65-47E7-B93F-B65B58A2E152/data/Containers/Data/Application/429FA877-989D-4E43-837D-C12FDDB0BA9C/Documents/default.realm
         
         do {
             let realm = try Realm()
